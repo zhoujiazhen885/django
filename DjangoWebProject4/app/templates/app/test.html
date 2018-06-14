@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="标尺">
+        <meter value="6" min="0" max="10">十分之六</meter>
+        <meter value="0.6">60%</meter>
+    <section>
+        <p>百分比进度：<progress id="progress" max="100"><span>0</span>%</progress></p>
+        <input type="button" onclick="click1()" value="显示进度"/>
+    </section>
+    <script>
+        function click1() {
+            var progress = document.getElementById('progress');
+            progress.getElementsByTagName('span')[0].textContent = "0";
+            for (var i = 0; i <= 60; i++)
+                updateProgress(i);
+        }
+        function updateProgress(newValue) {
+            var progress = document.getElementById('progress');
+            progress.value = newValue;
+            progress.getElementsByTagName('span')[0].textContent = newValue;
+        }
+    </script>
+    </div>
+    <div id="time">
+        <time datetime="2018-6-13T16:12" pubdate>发布时间</time><br />
+        <time datetime="2018-6-13T16:13Z">使用UTC标准时间</time><br />
+        <time datetime="2018-6-13T16:00+09:00">增加9小时的时差</time><br />
+    </div>
+    <div id="warpper">
+        <h1>什么是大什么是小</h1>
+        <h2>王浩悖论</h2>
+        <p>1是小的数（small number），如果n是小的数，那么n+1也是小的数。按照数学归纳法可以得出结论：所有的自然数都是小的数。</p>
+        <h2>高效算法定义</h2>
+        <p>算法的运行时间或者空间随着问题规模呈<em><b>多项式函数</b></em>增长的就算高效算法，因为<em>多项式的增长</em>相对于<em>指数增长</em>是更加可控的。</p>
+        <blockquote cite="https://gitee.com/zhoujiazhen885/events">
+            有人把它说成是知识，以为知识越多，就越有智慧。我们今天无时无处不在受到信息的包围和信息的轰炸，似乎所有的信息都是真理，
+            仿佛离开了这些信息，就不能生存下去了。<wbr />但是你掌握的信息<wbr />越多，只能说明你知识的丰富，并不等于你掌握了智慧。
+        </blockquote>
+            <div id="box1">
+                <h3>栏目标题</h3>
+                <p>正文</p>
+            </div>
+            <div id="box2">
+                <h3>栏目标题</h3>
+                <div id="sub_box1">
+                    <h4>子栏目标题</h4>
+                    <p>没有<em>最好</em>，只有<strong>更好</strong>！</p>
+                </div>
+                <div id="sub_box2">
+                    <h4>子栏目标题</h4>
+                    <p>她说：<q>好</q></p>
+                    <cite title="转载地址">https://gitee.com/zhoujiazhen885/events</cite>
+                </div>
+            </div>
+    </div>
+
+    <div id="maths">
+        <h1>解一元二次方程</h1>
+        <p>一元二次方程求解有四种方法：</p>
+        <ul>
+            <li><bdi>方法一</bdi>直接开平方法</li>
+            <li><bdi>方法二</bdi>配方法</li>
+            <li><bdi>方法三</bdi>公式法</li>
+            <li><bdi>方法四</bdi>因式分解法</li>
+        </ul>
+        <p>例如，针对下面这个一元二次方程：</p>
+        <p><i>x</i><sup>2</sup>-<b>5</b><i>x</i>+<b>4</b>=0</p>
+        <p>我们使用<big><b>分解因式法</b></big>来演示解题思路如下：</p>
+        <p><small>由：</small>（<i>x</i>-1)(<i>x</i>-4)=0</p>
+        <p><small>得：</small><br />
+            <i>x</i><sub>1</sub>=1<br />
+            <i>x</i><sub>2</sub>=4</p>
+    </div>
+
+    <div>
+        <p><abbr title="Abbreviation">abbr</abbr>元素最初是在HTML3.0中引入的，表示它所包含的文本是一个更长的单词或短语
+        的缩写形式。浏览器可能会根据这个信息改变对这些文本的显示方式，或者用其他文本代替。</p>
+        <bdo dir="rtl">床前明月光，疑是地上霜。举头望明月，低头思故乡。</bdo>
+        <p><cite>因为懂得，所以慈悲</cite>。<ins cite="https://gitee.com/zhoujiazhen885/events" datetime="2018-6-12">
+            这是张爱玲对胡兰成说的话</ins>。</p>
+        <p><cite>笑全世界便与你同笑，哭你便独自哭</cite>。<del datetime="2018-6-12">出自冰心的《遥寄印度哲人泰戈尔》</del>，
+        <ins cite="https://gitee.com/zhoujiazhen885/events" datetime="2018-6-12">出自张爱玲小说《花凋》</ins></p>
+        <p>strong元素是原文作者用来强调一段文字的重要性的，如错误信息，em元素是作者为了突出文章重点文字而使用的，mark元素
+        的标示目的与原文无关，一般用来展示搜索结果</p>
+    </div>
+   
+    
+    
+    <footer>
+        <section>
+            <address>
+                <a title="作者：MDN" href="https://gitee.com/zhoujiazhen885/events">周佳振的码云</a>
+
+            </address>
+            <p>发布于：
+                <time datetime="2018-6-13">2018年6月13日</time>
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
