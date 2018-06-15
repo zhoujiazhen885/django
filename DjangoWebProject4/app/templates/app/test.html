@@ -4,6 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script>
+        function type(o) {
+            return (o == null) ? "null" : (typeof o);
+        }
+        var a = [12, 13, 14]
+        var b = 12
+        var c = "abc"
+        var d = null
+        var e
+        document.write("<p>" + "[12, 13, 14]" + "是" + type(a) + "类型</p>");
+        document.write("<p>" + "12" + "是" + type(b) + "类型</p>");
+        document.write("<p>" + "abc" + "是" + type(c) + "类型</p>");
+        document.write("<p>" + "null" + "是" + type(d) + "类型</p>");
+        document.write("<p>" + "" + "是" + type(e) + "类型</p>");
+        document.write("<p>" + "未声明的f" + "是" + type(f) + "类型</p>");     //这行函数未生效
+    </script>
 </head>
 <body>
     <div id="标尺">
